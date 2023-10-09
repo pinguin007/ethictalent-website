@@ -2017,7 +2017,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			body {
-				padding-top: 2.5em;
+				/* padding-top: 2.5em; */
 			}
 
 		}
@@ -2234,7 +2234,7 @@ input, select, textarea {
 				}
 
 				.main.style2 .button.anchored {
-					display: none;
+					/* display: none; */
 				}
 
 				.main.style2 .content {
