@@ -1,0 +1,132 @@
+.contact {
+  padding: 110px 0;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    &-header {
+      max-width: 768px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      h2 {
+        margin-bottom: 8px;
+      }
+      strong {
+        font-weight: 600;
+        font-size: 16px;
+        font-family: $font-secondary;
+      }
+      p {
+        font-family: $font-secondary;
+      }
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    &-container {
+      width: calc(50% - 20px);
+      max-width: 616px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px 24px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 8px;
+    width: calc(50% - 12px);
+    font-family: $font-secondary;
+    &-ico {
+      font-size: inherit;
+      width: 2em;
+      height: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      .ico {
+        color: $black;
+      }
+    }
+    strong {
+      font-family: inherit;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    a {
+      font-family: inherit;
+      text-decoration: underline;
+      max-width: 240px;
+      @include transition;
+      &:hover {
+        opacity: 0.7;
+      }
+      &._unset {
+        text-decoration: unset;
+      }
+    }
+    .button {
+      margin: 16px auto 0 0;
+    }
+  }
+  .form {
+    width: calc(50% - 20px);
+    max-width: 616px;
+  }
+}
+
+@mixin contact-1160 {
+  .contact {
+    padding: 90px 0;
+  }
+}
+@mixin contact-1025 {
+  .contact {
+    padding: 80px 0;
+  }
+}
+@mixin contact-860 {
+  .contact {
+    &__inner {
+      &-row {
+        gap: 20px;
+        &-container {
+          width: calc(50% - 10px);
+        }
+      }
+    }
+    .form {
+      width: calc(50% - 10px);
+    }
+  }
+}
+@mixin contact-768 {
+  .contact {
+    padding: 60px 0;
+    &__inner {
+      &-row {
+        flex-direction: column;
+        gap: 40px;
+      }
+      &-container {
+        width: 100%;
+        max-width: unset;
+      }
+    }
+    .form {
+      width: 100%;
+      max-width: unset;
+      order: 1;
+    }
+  }
+}
+@mixin contact-580 {
+  .contact {
+    padding: 40px 0;
+  }
+}

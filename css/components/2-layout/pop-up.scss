@@ -1,0 +1,40 @@
+.popUp {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 475px;
+  height: 100%;
+  @include transition;
+  opacity: 0;
+  z-index: 2;
+
+  transform: translateX(100%);
+  pointer-events: none;
+  &.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@mixin popUp-1340 {
+  .popUp {
+    width: 450px;
+  }
+}
+@mixin popUp-1280 {
+  .popUp {
+    width: 430px;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    right: unset;
+    transform: translateX(-100%);
+  }
+}
+@mixin popUp-580 {
+}
+@mixin popUp-460 {
+  .popUp {
+  }
+}
