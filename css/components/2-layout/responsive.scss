@@ -1,0 +1,109 @@
+@media (max-width: 1340px) {
+  @include components-1340;
+  @include menu-1340;
+  @include header-1340;
+  @include popUp-1340;
+  @include index-1340;
+  @include barTabs-1340;
+  @include info-1340;
+  @include index-1340;
+}
+@media (max-width: 1280px) {
+  @include typography-1280;
+  @include components-1280;
+  @include menu-1280;
+  @include header-1280;
+  @include popUp-1280;
+  @include barTabs-1280;
+  @include index-1280;
+  @include grid-1280;
+  @include info-1280;
+}
+@media (max-width: 1160px) {
+  .autoContainer {
+    padding: 0 40px;
+  }
+  @include typography-1160;
+  @include menu-1160;
+  @include barTabs-1160;
+  @include index-1160;
+  @include contact-1160;
+  @include feedback-1160;
+}
+@media (max-width: 1025px) {
+  .autoContainer {
+    padding: 0 30px;
+  }
+  @include typography-1025;
+  @include components-1025;
+  @include header-1025;
+  @include index-1025;
+  @include barTabs-1025;
+  @include contact-1025;
+  @include info-1025;
+  @include scrollProgres-1025;
+  @include feedback-1025;
+}
+@media (max-width: 940px) {
+  .autoContainer {
+    padding: 0 25px;
+  }
+  @include barTabs-940;
+  @include footer-940;
+  @include index-940;
+  @include scrollProgres-940;
+  @include feedback-940;
+}
+@media (max-width: 860px) {
+  @include header-860;
+  @include barTabs-860;
+  @include index-860;
+  @include contact-860;
+  @include scrollProgres-860;
+}
+@media (max-width: 768px) {
+  .autoContainer {
+    padding: 0 15px;
+  }
+  @include typography-768;
+  @include menu-768;
+  @include index-768;
+  @include barTabs-768;
+  @include contact-768;
+  @include footer-768;
+  @include info-768;
+  @include grid-768;
+  @include feedback-768;
+}
+@media (max-width: 580px) {
+  ._hideMob {
+    display: none;
+  }
+  @include typography-580;
+  @include popUp-580;
+  @include index-580;
+  @include contact-580;
+  @include grid-580;
+  @include info-580;
+  @include scrollProgres-580;
+  @include feedback-580;
+}
+@media (max-width: 460px) {
+  @include typography-460;
+  @include components-460;
+  @include menu-460;
+  @include header-460;
+  @include popUp-460;
+  @include index-460;
+  @include footer-460;
+  @include scrollProgres-460;
+  @include feedback-460;
+}
+@media (max-width: 390px) {
+  @include typography-390;
+  @include header-390;
+
+  @include scrollProgres-390;
+}
+
+

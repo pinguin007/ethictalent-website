@@ -1,0 +1,166 @@
+.info {
+  padding: 104px 0 40px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    &-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      justify-content: space-between;
+      h2 {
+        width: calc(50% - 15px);
+        max-width: 616px;
+      }
+      p {
+        width: calc(50% - 15px);
+        max-width: 616px;
+      }
+    }
+  }
+  &__footer {
+    .ratioImage {
+      padding-bottom: 18.5%;
+    }
+  }
+  &--sm {
+    padding: 40px 0;
+    .info {
+      &__inner {
+        padding-bottom: unset;
+      }
+    }
+  }
+  &--lg {
+    padding: 100px 0 70px;
+    position: relative;
+    .info {
+      &__inner {
+        padding-bottom: unset;
+        gap: 140px;
+        &-row {
+          p {
+            max-width: 650px;
+          }
+        }
+      }
+      &__bg {
+        position: absolute;
+        bottom: 30%;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 100px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+        pointer-events: none;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+@mixin info-1340 {
+  .info {
+    &--lg {
+      .info {
+        &__bg {
+          height: unset;
+        }
+      }
+    }
+  }
+}
+@mixin info-1280 {
+  .info {
+    &--lg {
+      .info {
+        &__inner {
+          gap: 100px;
+          &-row {
+            h2 {
+              width: calc(40% - 15px);
+            }
+            p {
+              width: calc(60% - 15px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin info-1025 {
+  .info {
+    padding: 80px 0 40px;
+    &__inner {
+      padding-bottom: 60px;
+      &-row {
+        flex-direction: column;
+        h2 {
+          width: 100%;
+          max-width: unset;
+        }
+        p {
+          width: 100%;
+          max-width: unset;
+        }
+      }
+    }
+    &--lg {
+      padding: 60px 0 40px;
+      .info {
+        &__inner {
+          &-row {
+            h2 {
+              width: 100%;
+            }
+            p {
+              width: 100%;
+              max-width: unset;
+            }
+          }
+        }
+        &__bg {
+          bottom: unset;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+@mixin info-768 {
+  .info {
+    padding: 60px 0 40px;
+    &__inner {
+      padding-bottom: 40px;
+      &-row {
+        gap: 24px;
+      }
+    }
+    &--lg {
+      .info {
+        &__inner {
+          gap: 70px;
+        }
+      }
+    }
+  }
+}
+@mixin info-580 {
+  .info {
+    &--lg {
+      padding-top: 40px;
+      .info {
+        &__inner {
+          gap: 50px;
+        }
+      }
+    }
+  }
+}
