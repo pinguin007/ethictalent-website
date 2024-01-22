@@ -19,14 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-        <link rel="icon" href="images/logo-small.png" />
-
-    <title>Ethic Talent | Find Talent</title>
+    <link rel="icon" href="images/logo-small.png" />
+    <title>Ethic Talent | Home</title>
   </head>
 
   <body>
     <div class="main" id="main">
-      <!-- #menu start-->
       <div class="menu" id="menu">
         <div class="autoContainer">
           <div class="menu__inner">
@@ -51,7 +49,7 @@
                   <a href="./consulting.html">Consulting</a>
                   <a href="./talent.html">Find Talent</a>
                   <a href="./jobs.html">Find Jobs</a>
-                  <div class="button button--text" id="openForm">Contac Us</div>
+                  <div class="button button--text" id="openForm">Contact Us</div>
                 </div>
                 <div class="menu__inner-body-info">
                   <div class="menu__inner-body-info-list">
@@ -161,28 +159,28 @@
                   possible with the next steps on your employment journey
                 </p>
               </div>
-              <form class="form">
+              <form class="form" action="https://formsubmit.co/ethictalent@gmail.com" method="POST">
                 <div class="input__wrapper">
                   <label>Name</label>
                   <div class="input">
-                    <input type="text" />
+                    <input type="text" name="name" required/>
                   </div>
                 </div>
                 <div class="input__wrapper">
                   <label>Email</label>
                   <div class="input">
-                    <input type="email" />
+                    <input type="email" name="email" required/>
                   </div>
                 </div>
                 <div class="input__wrapper">
                   <label>Message</label>
                   <div class="input">
-                    <textarea placeholder="Type your message..."></textarea>
+                    <textarea placeholder="Type your message..." name="message" required></textarea>
                   </div>
                 </div>
                 <div class="checkbox__outer">
                   <div class="checkbox">
-                    <input type="checkbox" id="check-1" />
+                    <input type="checkbox" id="check-1" required/>
                     <span> </span>
                   </div>
                   <label for="check-1">
@@ -191,7 +189,7 @@
                   </label>
                 </div>
                 <div class="button__group">
-                  <button class="button button--text">
+                  <button class="button button--text" type="submit">
                     <span class="text"> Submit </span>
                   </button>
                   <button
@@ -207,15 +205,17 @@
           </div>
         </div>
       </div>
-      <!-- #menu start-->
-      <!-- #header -->
+      <!-- #header start-->
       <header class="header" id="header">
         <div class="autoContainer">
           <div class="header__inner">
             <a href="/" class="header__inner-logo">
-              <span class="logo">
-                <img src="./images/logo.png" alt="logo" />
-              </span>
+                <span class="logo">
+                  <img src="./images/logo.png" alt="logo" />
+                </span>
+              </a>
+            <a href="./talent.html" class="button button--text">
+              <span class="text"> Hire Us </span>
             </a>
             <button class="burger" id="menuBtn" aria-label="menu button">
               <span></span>
@@ -224,110 +224,27 @@
         </div>
       </header>
       <!-- #header end -->
-      <!-- #feedback start -->
-      <section class="feedback">
+      <!-- #hero start-->
+      <section class="hero">
         <div class="autoContainer">
-          <div class="feedback__inner">
-            <div class="feedback__inner-row">
-              <div class="form__wrapper">
-                <h3 class="_lg">
-                  Looking to hire talented individuals? Contact us, we have the
-                  talent.
-                </h3>
-                <form class="form" action="https://formsubmit.co/ethictalent@gmail.com" method="POST">
-                  <div class="form__group">
-                    <div class="input">
-                      <input type="text" placeholder="Name" name="name" required/>
-                    </div>
-                    <div class="input">
-                      <input type="text" placeholder="Phone" name="phone" required/>
-                    </div>
-                  </div>
-                  <div class="input">
-                    <input type="text" placeholder="Email" name="email" required/>
-                  </div>
-                  <div class="input">
-                    <textarea
-                      placeholder="Leave a brief message here..."
-                      name="message" required
-                    ></textarea>
-                  </div>
-                  <div class="form__container">
-                    <div class="input__wrapper">
-                      <label> Captcha: </label>
-                      <div class="input">
-                        <input type="text" placeholder="NHTT187" />
-                      </div>
-                    </div>
-                    <button class="button button--rounded">
-                      <span class="text"> Reset </span>
-                    </button>
-                    <div class="input">
-                      <input type="text" placeholder="Enter Captcha" />
-                    </div>
-                  </div>
-                  <button class="button button--rounded _red" type="submit">
-                    <span class="text"> Send Message </span>
-                  </button>
-                </form>
-              </div>
-              <div class="feedback__inner-image">
-                <div class="ratioImage">
-                  <img src="./images/feedback-2.png" alt="image" />
-                </div>
-              </div>
+            <h4 style="color: black; padding-bottom: 1%;">Ethic Talent Blog</h4>
+            <p>stay up to date for our latest articles, interesting news, and other helpful resources</p>
+            <div class="feedContainer">
+                <div id="substack-feed-embed"></div>
             </div>
-          </div>
         </div>
+        <div class="hero__bg _main"></div>
       </section>
-      <!-- #feedback end -->
-      <!-- #popUp start -->
-      <div class="popUp" id="popUp">
-        <div class="popUp__contact">
-          <div class="popUp__contact-box">
-            <h5>Contact us</h5>
-            <p>
-              Then someone from our team will contact you as soon as possible
-              with the next steps on your employment journey
-            </p>
-          </div>
-          <form class="form">
-            <div class="input__wrapper">
-              <label>Name</label>
-              <div class="input">
-                <input type="text" />
-              </div>
-            </div>
-            <div class="input__wrapper">
-              <label>Email</label>
-              <div class="input">
-                <input type="email" />
-              </div>
-            </div>
-            <div class="input__wrapper">
-              <label>Message</label>
-              <div class="input">
-                <textarea placeholder="Type your message..."></textarea>
-              </div>
-            </div>
-            <div class="checkbox__outer">
-              <div class="checkbox">
-                <input type="checkbox" id="check-1" />
-                <span> </span>
-              </div>
-              <label for="check-1">
-                I accept the
-                <a href="#"> Terms </a>
-              </label>
-            </div>
-            <button class="button button--text">
-              <span class="text"> Submit </span>
-            </button>
-          </form>
-        </div>
-      </div>
-      <!-- #popUp end -->
+      <!-- #hero end -->
     </div>
-    <script src="./js/main.js"></script>
+    <script>
+        window.SubstackFeedWidget = {
+          substackUrl: "ethictalent.substack.com",
+          posts: 6,
+          layout: "right"
+        };
+      </script>
+      <script src="https://substackapi.com/embeds/feed.js" async></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
